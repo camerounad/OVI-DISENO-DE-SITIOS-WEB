@@ -1,0 +1,163 @@
+﻿<!DOCTYPE HTML>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta description="UNAD Página web - Grupo 30">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/css.css">
+  <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/prefixfree.min.js"></script>
+  <script type="text/javascript" src="js/menu.js"></script>
+  <title>GitHub Pages</title>
+</head>
+
+<body>
+
+<div id="contenedor">
+  <header class="page-header">
+    <a href="https://www.unad.edu.co" target="_blank"><img src="img/logoUNAD.png" alt="Universidad Nacional Abierta y a Distancia" height="80%"></a>
+    <nav id="nav" role="navigation"> <a href="#nav" title="Show navigation">Mostrar Menu</a> <a href="#" title="Hide navigation">Ocultar Menu</a>
+      <ul class="clearfix">
+        <li><a href="modificacion.html">INICIO <i class="fa fa-home" aria-hidden="true"></i></a></li>
+        <li><a href="instalacion-git.html">GIT <i class="fa fa-git" aria-hidden="true"></i> <i class="fa fa-github" aria-hidden="true"></i></a>
+          <!-- Submenu -->
+          <ul>
+            <li><a href="instalacion-git.html">Instalación</a></li>
+            <li><a href="github.html">GITHUB</a></li>
+            <li><a href="githubpages.html">GITHUB Pages</a></li>
+            <li><a href="actividad-git.html">Actividad</a></li>
+          </ul>
+        </li>
+        <li><a href="#">HTML <i class="fa fa-html5" aria-hidden="true"></i></a>
+          <!-- Submenu -->
+          <ul>
+            <li><a href="html-intro.html">Introducción a HTML5</a></li>
+            <li><a href="#">Actividad</a></li>
+          </ul>
+        </li>
+        <li><a href="#">CSS <i class="fa fa-css3" aria-hidden="true"></i></a>
+          <!-- Submenu -->
+          <ul>
+            <li><a href="#">Actividad</a></li>
+          </ul>
+        </li>
+        <li><a href="autores.html">AUTOR <i class="fa fa-users" aria-hidden="true"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contenido2">
+    <article >
+      <h1>Introducción al HTML</h1>
+      <p>Cuando miras una página web en el navegador, lo que ves a simple vista son palabras. Estas palabras normalmente tienen algunas características, como diferentes tamaños y colores. En algunos casos la página web puede mostrar imágenes o incluso vídeos. La página también puede contener animaciones y contenidos que cambian mientras el resto de la página se mantiene sin cambios.</p>
+      <p>Varias tecnologías (como <a href="/en-US/docs/CSS" title="CSS">CSS</a>, <a href="/en-US/docs/JavaScript/About_JavaScript" title="JavaScript/About_JavaScript">JavaScript</a>, pueden usarse para definir los elementos que componen una página web. Sin embargo, en el nivel más bajo, una página web se define usando <a href="/en-US/docs/HTML" title="HTML"><strong>HTML</strong></a> (<strong>HyperText Markup Language)</strong>. Sin HTML, no habría páginas web.</p>
+      <p>Este artículo proporciona una introducción al HTML. Si alguna vez te has preguntado qué ocurre detrás de tu navegador web, este artículo es el mejor lugar para empezar a aprender.</p>
+      <h2>¿Qué es el HTML?</h2>
+      <p>HTML es un <strong>lenguaje de etiquetas</strong>. Indica al navegador como tiene que mostrar el contenido. El HTML separa el "contenido" (palabras, imágenes, audio, video, etc.) de la "presentación" (la definición del tipo de contenido y las instrucciones de cómo esos contenidos tienen que mostrarse). El HTML emplea un conjunto de elementos predefinidos que permiten identificar los distintos tipos de elementos. Estos elementos contienen una o más etiquetas que contienen o expresan el contenido. Estas etiquetas suelen ir encapsuladas entre los símbolos &lt;&gt;, y las etiquetas de cierre (que indican el final de un determinado contenido) están precedidas por una barra /.</p>
+      <p>Por ejemplo, el elemento párrafo consiste en una etiqueta de inicio como esta "&lt;p&gt;" y una de cierre "&lt;/p&gt;". El siguiente ejemplo muestra un párrafo que está contenido dentro del elemento párrafo en HTML:</p>
+      <div class="pre">
+        <code>&lt;p&gt;Mi perro odia el pescado.&lt;/p&gt;</code>
+      </div>
+      <p>El navegador emplea las etiquetas como guías para saber cómo debe ser mostrado el contenido que hay dentro de dichas etiquetas.</p>
+      <p>Los elementos que se encuentran contenidos, normalmente suelen contener también otros elementos. Por ejemplo, el elemento énfasis (etiqueta &lt;em&gt;) puede estar dentro del elemento párrafo:</p>
+      <div class="pre">
+        <code>&lt;p&gt;Mi perro &lt;em&gt;odia&lt;/em&gt; el pescado.&lt;/p&gt;</code>
+      </div>
+      <p>Algunos elementos no contienen otros elementos.  Como es el caso de la etiqueta imagen ("&lt;img&gt;") que simplemente especifica el nombre del archivo que contiene la imagen como atributo:</p>
+      <div class="pre">
+        <code>&lt;img src="smileyface.jpg"&gt;</code>
+      </div>
+      <p>En ocasiones, suele ponerse una barra "/" al final de la etiqueta, justo antes del cierre de la misma "&gt;" para indicar el final de la misma "/&gt;". Aunque se trata de algo opcional en HTML, en <a href="/en-US/docs/XHTML" title="XHTML">XHTML</a> es obligatoria (que es un lenguaje que permite una forma de poder implementar XML en los elementos del HTML).</p>
+      <p>El resto de este artículo describe con un mayor detalle los conceptos descritos en esta sección. Además, si quieres ver HTML en acción, pásate por <a href="http://thimble.webmaker.org/en-US/projects/wrangler/edit" class="external" title="http://thimble.webmaker.org/en-US/projects/wrangler/edit">Mozilla Thimble</a>, que es un editor online  interactivo que enseña cómo escribir HTML. Además, en el <a href="/en-US/docs/HTML/HTML_Elements" title="HTML/HTML_Elements">HTML Elements</a> podrás ver una lista de los elementos HTML disponibles, así como una descripción de los mismos y el uso de cada uno de ellos.</p>
+      <h2 id="Elementos_—_los_bloques_básicos_de_construcción">Elementos — los bloques básicos de construcción</h2>
+      <p>El HTML consiste en una serie de elementos. Los Elementos definen el significado <strong>semántico</strong> del contenido. Todos los Elementos están incluídos entre dos grandes etiquetas, que a su vez contienen otras etiquetas. Por ejemplo, el elemento "&lt;p&gt;" indica un párrafo; el elemento "&lt;img&gt;" indica una imagen. Mira la página <a href="/en-US/docs/HTML/Element" title="HTML/Element">HTML Elements</a> para ver una lista completa de todos los elementos.</p>
+      <p>Algunos elementos tienen un significado muy preciso, como "esto es una imagen", "esto es un encabezado" o "esto es una lista ordenada". Otros elementos resultan menos específicos, como "esto es una sección de una página" o "esto es parte de un texto". Finalmente otros elementos son usados por razones técnicas, como "esto es la información identificativa de la página que no debe ser mostrada". De un modo y otro, todos los elementos del HTML tienen un determinado valor semántico.</p>
+      <p>Muchos elementos contienen otros elementos, formando una estructura jerárquica. Un ejemplo simple, pero completo de una página web sería este:</p>
+      <div class="pre">
+        <code>&lt;html&gt;</code><br>
+        <code>&lt;body&gt;</code><br>
+        <code>&lt;p&gt;Mi perro &lt;em&gt;odia&lt;/em&gt; el pescado.&lt;/p&gt;</code><br>
+        <code>&lt;/body&gt;</code><br>
+        <code>&lt;/html&gt;</code>
+      </div>
+      <p>Como puedes ver, los elementos &lt;html&gt; encierran el resto del documento, y el elemento &lt;body&gt; encierra el contenido de la página. Esta estructura crece con las ramas de un árbol, donde los elementos &lt;body&gt; y &lt;p&gt; son las ramas que crecen del tronco que es &lt;html&gt;. Esta estructura jerárquica es lo que se denomina <strong>DOM</strong>: siglas inglesas del "Modelo de Objetos del Documento" (<strong>Document Object Model)</strong>.</p>
+      <h2 id="Etiquetas">Etiquetas</h2>
+      <p>Los documentos HTML están escritos en texto plano. Pueden ser escritos mediante editores de texto capaces de guardar contenido de texto plano (aunque la mayor parte de los creadores de código HTML prefieren editores especializados que resaltan las partes de código propias de la sintaxis del HTML y muestran el DOM). Los nombres de las Etiquetas, pueden escribirse en mayúsculas o en minúsculas. Aunque, el <a href="http://www.w3.org/" class="external" title="http://www.w3.org/">W3C</a> (Asociación Global que vela por mantener los estándares HTML) recomiendan usar minúsculas (y además el <a href="/en-US/docs/XHTML" title="XHTML">XHTML</a> requiere de las minúsculas).</p>
+      <p>El código HTML contenido entre los signos de menor que ("&lt;") al comienzo y mayor que ("&gt;") al final, tienen un significado especial. Es lo que denominamos etiquetas. He aquí un ejemplo sencillo:</p>
+      <div class="pre">
+        <code>&lt;p&gt;Esto es texto dentro de un párrafo.&lt;/p&gt;</code>
+      </div>
+      <p>En este ejemplo hay una etiqueta de comienzo y otra de cierre. Las etiquetas de cierre son las mismas que las etiquetas de comienzo sólo que contienen una barra justo después del signo menor que. Muchos elementos de HTML se escriben empleando las dos etiquetas de comienzo y final. Las etiquetas de comiezo y final de un elemento deben estar adecuadamente anidadas, esto significa que las etiquetas de cierre deben escribirse en el orden inverso al de las etiquetas de inicio. La regla del anidamiento de etiquetas tiene que cumplirse de forma escrupulosa para poder escribir <strong>código válido</strong>.</p>
+      <p>Esto es un ejemplo de <em>código válido</em>:</p>
+      <div class="pre">
+        <code>&lt;em&gt;Me &lt;strong&gt;refiero&lt;/strong&gt; a eso&lt;/em&gt;.</code>
+      </div>
+      <p>Esto es un ejemplo de <em>código inválido</em>:</p>
+      <pre class="brush: xml">Invalido: &lt;em&gt;Me &lt;strong&gt;refiero&lt;/em&gt; a eso&lt;/strong&gt;.</pre>
+      <p>Observa que en el ejemplo válido, la etiqueta de cierre para el elemento anidado está situada antes de la etiqueta de cierre del elemento que la contenedor.</p>
+      <div class="note">
+        <p>Hasta la adopción de las reglas revisadas del HTML5, los navegadores no interpretaban los códigos no válidos del mismo modo y provocaban distintos resultados cuando se encontraban con estas partes de código. Los navegadores eran tolerantes con los autores de código Web, pero por desgracia no todos de la misma forma, llevando a situaciones impredecibles a la hora de interpretar códigos no válidos de HTML. Pero esos días han acabado tras la última evolución de los navegadores como Internet Explorer 10, Firefox 4, Opera 11.60, Chrome 18 o Safari 5, a medida que han implementado las nuevas normas de interpretación de código HTML no válido. Aquí puede ver el resultado de un código invalido para el mismo arbol DOM <a href="http://arstechnica.com/open-source/news/2011/11/a-look-at-the-state-of-html5-parsing-and-the-opera-1160-beta.ars" class="external" title="http://arstechnica.com/open-source/news/2011/11/a-look-at-the-state-of-html5-parsing-and-the-opera-1160-beta.ars">en todos los navegadores modernos</a>.</p>
+      </div>
+      <p>Algunos elementos no contienen texto o ningún otro elemento. Es lo que se denominan elementos vacíos y no necesitan etiquetas de cierre. Este es un ejemplo:</p>
+      <pre class="brush: xml">&lt;img src="smileyface.jpg"/&gt;</pre>
+      <p>Mucha gente marca los elementos vacíos usando una barra al final de la etiqueta, justo antes del simbolo mayor que (necesario en los códigos de XHTML).</p>
+      <pre class="brush: xml">&lt;img src="smileyface.jpg"/&gt;</pre>
+      <p>En HTML esta barra no aporta ninguna funcionalidad técnica y su uso es solamente una elección de estilo.</p>
+      <h2 id="Atributos">Atributos</h2>
+      <p>La etiqueta de comienzo puede contener información adicional, tal y como puede verse en el siguiente ejemplo. Dicha información es lo que se conoce como <strong>atributos</strong>. Los atributos suelen consistir en dos partes:</p>
+      <ul>
+        <li>Un atributo <strong>nombre </strong>(name).</li>
+        <li>Un atributo <strong>valor</strong> (value).</li>
+      </ul>
+      <p>Algunos atributos sólo pueden tener un único valor. Son atributos <strong>Booleanos</strong> y pueden ser incluidos para especificar el nombre del atributo, o dejar su valor vacío. Así los siguientes tres ejemplos tienen el mismo significado:</p>
+      <pre class="brush: xml">&lt;input required="required"&gt;
+&lt;input required=""&gt;
+&lt;input required&gt;
+</pre>
+      <p>Los valores de los atributos que constan de una sola palabra o un número se pueden escribir tal cual, pero en cuanto hay dos o más cadenas de caracteres en el valor, éstos deben escribirse entre comillas. Están permitidas tanto las comillas simples ('), como las comillas dobles (") aunque muchos desarrolladores prefieren utilizar siempre comillas simples para que el código sea menos ambiguo para la vista y para evitar errores como el siguiente:</p>
+      <pre class="brush: xml">&lt;p class=foo bar&gt; (Ten cuidado, esto probablemente no quiere decir lo que piensas que significa.)</pre>
+      <p>En este ejemplo suponemos que el valor del atributo es "foo bar" pero al no haber comillas en el código se interpreta como si se hubiera escrito así:</p>
+      <pre class="brush: xml">&lt;p class="foo" bar=""&gt;</pre>
+      <h2 id="Nombre_de_caracteres_referenciados">Nombre de caracteres referenciados</h2>
+      <p>Los<strong> Caracteres Referenciados </strong> (a veces llamados<em> entidades) </em>son combinaciones de caracteres que sirven para mostrar en el navegador símbolos que tienen un significado especial en el código HTML. Por ejemplo, HTML interpreta que el símbolo menor que y mayor que son delimitadores de una etiqueta. Si quieres que estos simbolos sean mostrados en el contenido del texto, debemos usar los nombres de referencia de estos caracteres. Aquí están los cuatro caracteres referenciados más comunes, que no estaría de más que memorizases:</p>
+      <ul>
+        <li><code>&amp;gt;</code> representa el caracter mayor que (<code>&gt;</code>)</li>
+        <li><code>&amp;lt;</code> representa el caracter menor que (<code>&lt;</code>)</li>
+        <li><code>&amp;amp;</code> representa el caracter ampersand (<code>&amp;</code>)</li>
+        <li><code>&amp;quot;</code> representa el caracter de comillas dobles (")</li>
+      </ul>
+      <p>Hay <a href="http://www.w3.org/TR/2011/WD-html5-20110113/named-character-references.html" class="external" title="http://www.w3.org/TR/html5/named-character-references.html#named-character-references">muchas más entidades</a>, pero estas cuatro son las más importantes por que representan caracteres que tienen un significado especial en HTML.</p>
+      <h2 id="Tipo_de_documento_y_comentarios">Tipo de documento y comentarios</h2>
+      <p>Además de las etiquetas, el contenido y las entidades, un documento de HTML debe contener una declaración <strong>doctype</strong> en la primera línea. En el HTML actual esto se escribe del siguiente modo:</p>
+      <pre class="brush: xml">&lt;!DOCTYPE html&gt;</pre>
+      <p>El doctype tiene una historia larga y complicada, pero todo lo que necesitas saber ahora es que el doctype le dice al navegador que interprete el código HTML y CSS de acuerdo a los estándares web del <a href="http://www.w3.org/" class="external" title="http://www.w3.org/">W3C</a> y que no trate de emular que se trata de un Internet Explorer de los 90's. (Consultar <a href="/en-US/docs/Quirks_Mode_and_Standards_Mode" title="Mozilla's Quirks Mode">peculiaridades</a>.)</p>
+      <p>HTML tiene un mecanismo para poder introducir <strong>comentarios</strong> al código que no serán mostrados en la página cuando esta sea interpretada o leída por un navegador web. Esto suele emplearse para añadir explicaciones al código, o dejar notas para explicar a otras personas cómo trabaja el código de la página, o simplemente para dejar recordatorios para uno mismo. Los comentarios en HTML están contenidos entre los siguientes símbolos:</p>
+      <pre class="brush: xml">&lt;!-- Esto es un comentario de texto --&gt;</pre>
+      <h2 id="Un_pequeño_documento_pero_completo">Un pequeño documento pero completo</h2>
+      <p>Colocando todas estas explicaciones juntas, aquí les dejamos un pequeño ejemplo de un documento HTML completo. Puedes copiar este código en un editor de textos, guardarlo como <em>miprimerdoc.html</em> y cargarlo en un navegador. Asegurate de estar usando los códigos de caracteres UTF-8. Dado que este documento no utiliza estilos (CSS) su apariencia será muy plana, pero sólo se trata de un pequeño comienzo.</p>
+
+
+
+    </article>
+  </div>
+</div>
+
+
+<footer>
+  <div id="footer">
+    <div id="creditos">
+      <p>Desarrollado por:</p>
+  <div class="chip">   <a href="autores.html">   <img src="img/camilo.jpg" alt="Camilo" width="100" height="120"> Camilo Camero Rojas</a> </div>   </div>
+    <div id="contador">
+      <p>Contador de visitas:</p>
+      <a href="https://www.cerotec.net/estadisticas-111873/dsw-grupo30.github.io" title="ir a gráficas y estadísticas"><img src="https://www.cerotec.net/contador.php?t=27&s=2&i=111873" alt="Contador de visitas y estadísticas"></a></div>
+  </div>
+  </div>
+</footer>
+
+</body>
+
+</html>

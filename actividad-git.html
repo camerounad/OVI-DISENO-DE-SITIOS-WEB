@@ -1,0 +1,103 @@
+﻿<!DOCTYPE HTML>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta description="UNAD Página web - Grupo 30">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/css.css">
+  <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/prefixfree.min.js"></script>
+  <script type="text/javascript" src="js/menu.js"></script>
+  <script type="text/javascript" src="js/actividad1.js"></script>
+  <title>Actividad GIT</title>
+</head>
+
+<body>
+
+<div id="contenedor">
+  <header class="page-header">
+    <a href="https://www.unad.edu.co" target="_blank"><img src="img/logoUNAD.png" alt="Universidad Nacional Abierta y a Distancia" height="80%"></a>
+    <nav id="nav" role="navigation"> <a href="#nav" title="Show navigation">Mostrar Menu</a> <a href="#" title="Hide navigation">Ocultar Menu</a>
+      <ul class="clearfix">
+        <li><a href="modificacion.html">INICIO <i class="fa fa-home" aria-hidden="true"></i></a></li>
+        <li><a href="instalacion-git.html">GIT <i class="fa fa-git" aria-hidden="true"></i> <i class="fa fa-github" aria-hidden="true"></i></a>
+          <!-- Submenu -->
+          <ul>
+            <li><a href="instalacion-git.html">Instalación</a></li>
+            <li><a href="github.html">GITHUB</a></li>
+            <li><a href="githubpages.html">GITHUB Pages</a></li>
+            <li><a href="#">Actividad</a></li>
+          </ul>
+        </li>
+        <li><a href="#">HTML <i class="fa fa-html5" aria-hidden="true"></i></a>
+          <!-- Submenu -->
+          <ul>
+             <li><a href="html-intro.html">Introducción a HTML5</a></li>
+            <li><a href="actividad-git.html">Actividad</a></li>
+          </ul>
+        </li>
+        <li><a href="#">CSS <i class="fa fa-css3" aria-hidden="true"></i></a>
+          <!-- Submenu -->
+          <ul>
+            <li><a href="#">Actividad</a></li>
+          </ul>
+        </li>
+        <li><a href="autores.html">AUTOR <i class="fa fa-users" aria-hidden="true"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contenido2">
+    <article >
+      <h3>1. ¿Qué comando es necesario para crear un repositorio?</h3>
+      <input onclick="Engine(1, this.value)" type="radio" value="a" /> git status<br>
+      <input onclick="Engine(1, this.value)" type="radio" value="b" /> git add<br>
+      <input onclick="Engine(1, this.value)" type="radio" value="c" /> git init<br>
+      <input onclick="Engine(1, this.value)" type="radio" value="d" /> git config
+
+      <h3>2. Si deseas obtener una copia de un repositorio Git existente en GitHub, el comando que necesitas es:</h3>
+      <input onclick="Engine(2, this.value)" type="radio" value="a" /> git commit<br>
+      <input onclick="Engine(2, this.value)" type="radio" value="b" /> git add<br>
+      <input onclick="Engine(2, this.value)" type="radio" value="c" /> git log<br>
+      <input onclick="Engine(2, this.value)" type="radio" value="d" /> git clone
+
+      <h3>3. ¿Cuál es el comando utilizado para listar los cambios (commits) que han producido en el repositorio?</h3>
+      <input onclick="Engine(3, this.value)" type="radio" value="a" /> git init<br>
+      <input onclick="Engine(3, this.value)" type="radio" value="b" /> git status<br>
+      <input onclick="Engine(3, this.value)" type="radio" value="c" /> git tag<br>
+      <input onclick="Engine(3, this.value)" type="radio" value="d" /> git log
+
+      <h3>4. Lista todas las ramas (branches) disponibles localmente.</h3>
+      <input onclick="Engine(4, this.value)" type="radio" value="a" /> git branch<br>
+      <input onclick="Engine(4, this.value)" type="radio" value="b" /> git status<br>
+      <input onclick="Engine(4, this.value)" type="radio" value="c" /> git log<br>
+      <input onclick="Engine(4, this.value)" type="radio" value="d" /> git branch -r
+
+      <h3>5. ¿Cuál de los siguientes comandos crea una nueva rama local llamada develop?</h3>
+      <input onclick="Engine(5, this.value)" type="radio" value="a" /> git add develop<br>
+      <input onclick="Engine(5, this.value)" type="radio" value="b" /> git checkout -b develop<br>
+      <input onclick="Engine(5, this.value)" type="radio" value="c" /> git checkout -- develop<br>
+      <input onclick="Engine(5, this.value)" type="radio" value="d" /> git checkout develop
+
+    </article>
+  </div>
+</div>
+
+<footer>
+  <div id="footer">
+    <div id="creditos">
+      <p>Desarrollado por:</p>
+ <div class="chip">   <a href="autores.html">   <img src="img/camilo.jpg" alt="Camilo" width="100" height="120"> Camilo Camero Rojas</a> </div>   </div>
+    <div id="contador">
+      <p>Contador de visitas:</p>
+      <a href="https://www.cerotec.net/estadisticas-111873/dsw-grupo30.github.io" title="ir a gráficas y estadísticas"><img src="https://www.cerotec.net/contador.php?t=27&s=2&i=111873" alt="Contador de visitas y estadísticas"></a></div>
+  </div>
+  </div>
+</footer>
+
+</body>
+
+</html>
